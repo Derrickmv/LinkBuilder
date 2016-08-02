@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title>D23 Link Builder</title>
+   <link rel="stylesheet" href="bootstrap.min.css">
+   <link rel="stylesheet" href="linkbuilder.css">
+</head>
+<body>
+   <header class="container-fluid">
+      <div class="row">
+         <div class="col-md-12">
+            <h2>D23 Fanfare Link Builder</h2>
+         </div>
+      </div>
+   </header>
+   <div class="container-fluid">
+<!--       <div class="row">
+         <iframe width="100%" height="600px" src="https://docs.google.com/spreadsheets/d/1U-1F-acZnLHhWVJt7bPwxuRx8S4kqMaPYnt9hOLnJ_E/edit#gid=0&amp;single=true&amp;widget=false&amp;headers=false&amp;rm=minimal"></iframe>
+      </div> -->
+      <div class="row textarea-heading-row">
+         <div class="col-xs-6 col-md-6">
+            <h4 class="textarea-heading">Text to Parse</h4>
+         </div>
+         <div class="col-md-6 col-xs-6">
+            <h4 class="textarea-heading">Result</h4>
+         </div>
+      </div>
+      <div class="row code-row">
+         <div class="col-xs-6 col-md-6">
+         	<textarea name="pastedText" id="pastedText">
+         	</textarea>
+         </div>
+         <div class="col-xs-6 col-md-6">
+            <textarea name="parsedText" id="results">
+            </textarea>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-md-12 text-center">
+            <button class="btn btn-default btn-parse">PARSE TEXT</button>
+         </div>
+      </div>
+   </div>
+	<section class="container-fluid preview-container">
+      <div class="row">
+         <div class="col-md-12 text-center">
+            <h4 class="textarea-heading center-block preview-heading">Preview Changes</h4>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-md-12">
+            <div class="preview"></div>
+         </div>
+      </div>
+   </section>
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+   <script src="linkbuilder.js"></script>
+</body>
+</html>
